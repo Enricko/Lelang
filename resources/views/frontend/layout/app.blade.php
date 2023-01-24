@@ -67,7 +67,10 @@
                                 </div>
                             </a>
                         @else
-                            <a class="nav-link" href="/login">Log in</a>
+                            <a class="nav-link" href="/login">
+                                <i class="fas fa-user"></i>
+                                Log in
+                            </a>
                         @endif
                     </li>
                     @if (Auth::user() != null)

@@ -18,9 +18,9 @@
     <!-- Scripts -->
   <link rel="stylesheet" href="{{ asset('admin-lte') }}/dist/css/adminlte.min.css">
 </head>
-<body>
+<body style="background-color:#515151">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
