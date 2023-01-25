@@ -27,6 +27,8 @@ Auth::routes();
 Route::prefix('admin')->middleware(['auth','admin-auth'])->group( function(){
 
     Route::get('/',[App\Http\Controllers\AdminController::class,'index']);
+    Route::get('/laporan',[App\Http\Controllers\AdminController::class,'laporan']);
+    Route::post('/laporan',[App\Http\Controllers\AdminController::class,'laporan']);
     // === USER ===
         // +++ MASYARAKAT +++
         Route::get('/user',[App\Http\Controllers\UserController::class,'index']);

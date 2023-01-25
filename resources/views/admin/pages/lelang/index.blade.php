@@ -33,6 +33,7 @@
                             <th>Harga Awal</th>
                             <th>Harga Tertinggi</th>
                             <th>Penanggung Jawab</th>
+                            <th>History Bidding</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -81,6 +82,9 @@
                                             <h6>{{ $petugas->name }}</h6>
                                         </div>
                                     </div>
+                                </td>
+                                <td>
+                                    <a href="/admin/history_bidding/{{ $row->id_lelang }}" class="btn btn-primary">History Bidding</a>
                                 </td>
                             </tr>
                         @endforeach
